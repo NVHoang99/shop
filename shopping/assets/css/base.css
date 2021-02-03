@@ -1,0 +1,189 @@
+:root {
+  --primary-color: #4c4b6c;
+}
+
+* {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  line-height: 1.6rem;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+/*------------------------------------ */
+/*----------- REUSEABLE -------------- */
+/*------------------------------------ */
+
+/* 3 BUTTON */
+.product__button a {
+  height: 45px;
+  width: 45px;
+  background-color: #f4f4f4;
+  border-radius: 50%;
+  border: none;
+  display: inline-block;
+  text-align: center;
+  margin-right: 5px;
+}
+
+.product__button a i {
+  font-size: 1.8rem;
+  color: #4d4c6d;
+  margin-top: 13px;
+}
+
+.product__button a:hover {
+  background-color: #7bd8f9;
+}
+
+.product__button a:hover > i {
+  color: white;
+}
+
+/* TAB */
+.container .tab__bar {
+  display: flex;
+  position: relative;
+}
+
+.container .tab__bar > ul li {
+  display: inline-block;
+  list-style: none;
+  padding-right: 30px;
+}
+
+.container .tab__bar > ul li a {
+  margin-bottom: 10px;
+  font-size: 2.2rem;
+  color: #999999;
+  padding-bottom: 15px;
+  position: relative;
+}
+
+.container .tab__bar > ul li a:hover {
+  color: #4c4b6c;
+  cursor: pointer;
+}
+
+.container .tab__bar > ul li a:after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background: #dd2a2a;
+  position: absolute;
+  display: block;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+}
+
+.container .tab__bar > ul li:hover a:after {
+  opacity: 1;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+
+.container .tab__bar > ul li.active a:after {
+  opacity: 1;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+
+.container .tab__bar > ul li a:after {
+  background: #4c4b6c !important;
+}
+
+.tab__content {
+  padding-top: 50px;
+  display: none;
+}
+
+.tab__body .active {
+  display: block;
+}
+
+/* TITLE */
+h3 {
+  font-size: 2.8rem;
+  font-weight: 500;
+  color: #4c4b6c;
+}
+
+/* VIEWMORE */
+
+.viewmore {
+  position: absolute;
+  right: 0;
+  font-size: 1.3rem;
+}
+
+.viewmore:hover {
+  cursor: pointer;
+}
+
+.viewmore i.fa.fa-angle-right {
+  border: 0px solid black;
+  padding: 2px 5.5px;
+  border-radius: 50%;
+  text-align: center;
+  background-color: #4c4b6c;
+  color: white;
+  margin-left: 5px;
+}
+
+.viewmore:hover span {
+  color: #7bd8f9;
+}
+
+.viewmore:hover i.fa.fa-angle-right {
+  background-color: #7bd8f9;
+}
+
+/* BUTTON */
+.btn {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 1.4rem;
+  line-height: 1.428571429;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.drop-filter button.btn.btn-primary.dropdown-toggle {
+    background: #4c4b6c;
+    width: 150px;
+    height: 45px;
+    border-radius: 40px;
+    font-size: 1.8rem;
+    font-weight: 500;
+    font-family: poppins;
+    border: transparent;
+    color: white;
+    outline: none;
+}
+
+.drop-filter button.btn.btn-primary.dropdown-toggle:hover {
+  cursor: pointer;
+}

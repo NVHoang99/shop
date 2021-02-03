@@ -1,0 +1,1865 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My web</title>
+    <!-- reset css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <!-- grid system-->
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <!-- responsive-->
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <!-- fontawesome-->
+    <link href="./assets/fonts/fontawesome-free-5.13.1-web/css/all.min.css" rel="stylesheet">
+    <!-- google font: Roboto-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+</head>
+
+<body>
+    <div class="app">
+        <div class="grid wide">
+            <!-- HEADER-->
+            <header class="header" id="header">
+                <div class="header__top">
+                    <ul class="top__left">
+                        <li>
+                            <div class="top__hotline">
+                                <p>Hotline: </p>
+                                <p>0123 456 789</p>
+                            </div>
+                        </li>
+                        <li class="top__separate">
+                            <i class="fas fa-phone-volume"></i>
+                        </li>
+                        <li>
+                            <i class="fas fa-gift"></i>
+                            <p>02</p>
+                            <span>Gift Vouchers</span>
+                        </li>
+                    </ul>
+
+                    <ul class="top__right">
+                        <li class="top__separate-v2">
+                            <div class="top__language">
+                                <span class="top__language-default" id="top__language-default">ENG</span>
+                                <i class="fas fa-chevron-down down-icon"></i>
+
+                                <ul class="language-list" id="language-list">
+                                    <li class="language-list-item">
+                                        <span> EN - English </span>
+                                    </li>
+                                    <li class="language-list-item">
+                                        <span> US - American </span>
+                                    </li>
+                                    <li class="language-list-item">
+                                        <span> FR - France </span>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="top__separate-v3">
+                            <div class="top__currency">
+                                <span class="top__currency-default">USD</span>
+                                <i class="fas fa-chevron-down down-icon"></i>
+
+                                <ul class="currency-list">
+                                    <li class="currency-list-item">
+                                        <span>USD - Dollar</span>
+                                    </li>
+                                    <li class="currency-list-item">
+                                        <span>Eur - Euro</span>
+                                    </li>
+                                    <li class="currency-list-item">
+                                        <span>GBP - Pound</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sign-in">
+                            <p>Sign in /<span> Register</span> </p>
+                        </li>
+                    </ul>
+                </div>
+                <nav class="header__bottom">
+                    <div class="row no-gutters">
+                        <div class="col l-2 header__logo">
+                            <img src="assets/image/logo.png">
+                        </div>
+
+                        <div class="col l-5 header__nav">
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="shop_products.html">Products</a> </li>
+                                <li><a href="#">Sales</a> </li>
+                                <li><a href="#">Blogs</a> </li>
+                                <li><a href="#">About Us</a></li>
+                            </ul>
+                        </div>
+                        <div class="col l-3 header__search">
+                            <input type="search" placeholder="Search...">
+                            <button type="submit">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                        <div class="col l-2 header__card">
+                            <div class="card__item">
+                                <button type="button" class="fas fa-shopping-bag"></button>
+                            </div>
+                            <div class="card__price">
+                                <h4>My Cart.</h4>
+                                <p>01 </p>
+                                <span>/ $150.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+
+            <!-- MAIN -->
+            <main class="main">
+                <!-- SLIDER-->
+                <div class="main__slider">
+                    <div class="slide-container">
+                        <div class="slides-wrap">
+                            <input type="radio" name="r" id="slide-1" checked>
+                            <input type="radio" name="r" id="slide-2">
+
+                            <div class="slide-item slide-item-default">
+                                <img src="assets/image/slider1.jpg" alt="">
+                            </div>
+                            <div class="slide-item">
+                                <img src="assets/image/slider2.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="slider-navigation">
+                            <label for="slide-1" class="bar label-1"></label>
+                            <label for="slide-2" class="bar label-2"></label>
+                        </div>
+                    </div>
+                    <div id="prev-btn">
+                        <i class="fa fa-chevron-left"></i>
+                    </div>
+                    <div id="next-btn">
+                        <i class="fa fa-chevron-right"></i>
+                    </div>
+                </div> <!-- END SLIDER-->
+
+                <!-- HOMEPAGE-->
+                <div class="main__homepage">
+                    <div class="row no-gutters">
+                        <div class="col l-4 homepage-1">
+                            <img src="assets/image/homepage1.jpg">
+                            <div class="homepage-title" id="homepage-title-1">
+                                <a href="#">
+                                    <p>Shop Now</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col l-4 homepage-2">
+                            <img src="assets/image/homepage2.jpg">
+                            <div class="homepage-title" id="homepage-title-2">
+                                <a href="#">
+                                    <p>Shop Now</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col l-4 homepage-3">
+                            <img src="assets/image/homepage3.jpg">
+                            <div class="homepage-title" id="homepage-title-3">
+                                <a href="#">
+                                    <p>Shop Now</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--END HOMEPAGE-->
+
+                <!-- PRODUCT-->
+                <section class="main__product">
+                    <div class="container">
+                        <div class="tab__bar">
+                            <ul class="tab__title">
+                                <li class="active">
+                                    <a> Featured</a>
+                                </li>
+                                <li>
+                                    <a> New Arrival</a>
+                                </li>
+                                <li>
+                                    <a> Bestseller</a>
+                                </li>
+                            </ul>
+                            <a class="viewmore">
+                                <span>View All Products </span>
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        </div>
+                        <div class="tab__body">
+                            <div class="tab__content active">
+                                <div class="row">
+                                    <div class="col l-2-4 product-item">
+                                        <div class="product__image">
+                                            <a href="product_detail.html">
+                                                <img src="assets/image/feat1.jpg">
+                                                <i class="fas fa-arrows-alt"></i>
+                                                <span>Quick view</span>
+                                            </a>
+                                            <div class="product__image-sale">
+                                                <span>New</span>
+                                            </div>
+                                        </div>
+                                        <div class="product__content">
+                                            <p>Crepe Jacket With Pompom</p>
+                                            <div class="product__star">
+                                                <ul>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li>
+                                                        <em>6 review(s)</em>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="product__price">
+                                                <p>$36.00</p>
+                                                <del>$42.00</del>
+                                            </div>
+                                        </div>
+                                        <div class="product__button">
+                                            <a href="#"><i class="fa fa-shopping-bag"></i></a>
+                                            <a href="#"><i class="fa fa-balance-scale"></i></a>
+                                            <a href="#"><i class="fa fa-heart"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="col l-2-4 product-item">
+                                        <div class="product__image">
+                                            <a href="product_detail.html">
+                                                <img src="assets/image/feat2.jpg">
+                                                <i class="fas fa-arrows-alt"></i>
+                                                <span>Quick view</span>
+                                            </a>
+                                            <div class="product__image-sale">
+                                                <span>New</span>
+                                            </div>
+                                        </div>
+                                        <div class="product__content">
+                                            <p>Crepe Jacket With Pompom</p>
+                                            <div class="product__star">
+                                                <ul>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li>
+                                                        <em>6 review(s)</em>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="product__price">
+                                                <p>$36.00</p>
+                                                <del>$42.00</del>
+                                            </div>
+                                        </div>
+                                        <div class="product__button">
+                                            <a href="#"><i class="fa fa-shopping-bag"></i></a>
+                                            <a href="#"><i class="fa fa-balance-scale"></i></a>
+                                            <a href="#"><i class="fa fa-heart"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="col l-2-4 product-item">
+                                        <div class="product__image">
+                                            <a href="product_detail.html">
+                                                <img src="assets/image/feat3.jpg">
+                                                <i class="fas fa-arrows-alt"></i>
+                                                <span>Quick view</span>
+                                            </a>
+                                            <div class="product__image-sale">
+                                                <span>New</span>
+                                            </div>
+                                        </div>
+                                        <div class="product__content">
+                                            <p>Crepe Jacket With Pompom</p>
+                                            <div class="product__star">
+                                                <ul>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li>
+                                                        <em>6 review(s)</em>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="product__price">
+                                                <p>$36.00</p>
+                                                <del>$42.00</del>
+                                            </div>
+                                        </div>
+                                        <div class="product__button">
+                                            <a href="#"><i class="fa fa-shopping-bag"></i></a>
+                                            <a href="#"><i class="fa fa-balance-scale"></i></a>
+                                            <a href="#"><i class="fa fa-heart"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="col l-2-4 product-item">
+                                        <div class="product__image">
+                                            <a href="product_detail.html">
+                                                <img src="assets/image/feat4.jpg">
+                                                <i class="fas fa-arrows-alt"></i>
+                                                <span>Quick view</span>
+                                            </a>
+                                            <div class="product__image-sale">
+                                                <span>New</span>
+                                            </div>
+                                        </div>
+                                        <div class="product__content">
+                                            <p>Crepe Jacket With Pompom</p>
+                                            <div class="product__star">
+                                                <ul>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li>
+                                                        <em>6 review(s)</em>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="product__price">
+                                                <p>$36.00</p>
+                                                <del>$42.00</del>
+                                            </div>
+                                        </div>
+                                        <div class="product__button">
+                                            <a href="#"><i class="fa fa-shopping-bag"></i></a>
+                                            <a href="#"><i class="fa fa-balance-scale"></i></a>
+                                            <a href="#"><i class="fa fa-heart"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="col l-2-4 product-item">
+                                        <div class="product__image">
+                                            <a href="product_detail.html">
+                                                <img src="assets/image/feat5.jpg">
+                                                <i class="fas fa-arrows-alt"></i>
+                                                <span>Quick view</span>
+                                            </a>
+                                            <div class="product__image-sale">
+                                                <span>New</span>
+                                            </div>
+                                        </div>
+                                        <div class="product__content">
+                                            <p>Crepe Jacket With Pompom</p>
+                                            <div class="product__star">
+                                                <ul>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li>
+                                                        <em>6 review(s)</em>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="product__price">
+                                                <p>$36.00</p>
+                                                <del>$42.00</del>
+                                            </div>
+                                        </div>
+                                        <div class="product__button">
+                                            <a href="#"><i class="fa fa-shopping-bag"></i></a>
+                                            <a href="#"><i class="fa fa-balance-scale"></i></a>
+                                            <a href="#"><i class="fa fa-heart"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col l-2-4 product-item">
+                                        <div class="product__image">
+                                            <a href="product_detail.html">
+                                                <img src="assets/image/feat6.jpg">
+                                                <i class="fas fa-arrows-alt"></i>
+                                                <span>Quick view</span>
+                                            </a>
+                                            <div class="product__image-sale">
+                                                <span>New</span>
+                                            </div>
+                                        </div>
+                                        <div class="product__content">
+                                            <p>Crepe Jacket With Pompom</p>
+                                            <div class="product__star">
+                                                <ul>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li>
+                                                        <em>6 review(s)</em>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="product__price">
+                                                <p>$36.00</p>
+                                                <del>$42.00</del>
+                                            </div>
+                                        </div>
+                                        <div class="product__button">
+                                            <a href="#"><i class="fa fa-shopping-bag"></i></a>
+                                            <a href="#"><i class="fa fa-balance-scale"></i></a>
+                                            <a href="#"><i class="fa fa-heart"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="col l-2-4 product-item">
+                                        <div class="product__image">
+                                            <a href="product_detail.html">
+                                                <img src="assets/image/feat7.jpg">
+                                                <i class="fas fa-arrows-alt"></i>
+                                                <span>Quick view</span>
+                                            </a>
+                                            <div class="product__image-sale">
+                                                <span>New</span>
+                                            </div>
+                                        </div>
+                                        <div class="product__content">
+                                            <p>Crepe Jacket With Pompom</p>
+                                            <div class="product__star">
+                                                <ul>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li>
+                                                        <em>6 review(s)</em>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="product__price">
+                                                <p>$36.00</p>
+                                                <del>$42.00</del>
+                                            </div>
+                                        </div>
+                                        <div class="product__button">
+                                            <a href="#"><i class="fa fa-shopping-bag"></i></a>
+                                            <a href="#"><i class="fa fa-balance-scale"></i></a>
+                                            <a href="#"><i class="fa fa-heart"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="col l-2-4 product-item">
+                                        <div class="product__image">
+                                            <a href="product_detail.html">
+                                                <img src="assets/image/feat8.jpg">
+                                                <i class="fas fa-arrows-alt"></i>
+                                                <span>Quick view</span>
+                                            </a>
+                                            <div class="product__image-sale">
+                                                <span>New</span>
+                                            </div>
+                                        </div>
+                                        <div class="product__content">
+                                            <p>Crepe Jacket With Pompom</p>
+                                            <div class="product__star">
+                                                <ul>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li>
+                                                        <em>6 review(s)</em>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="product__price">
+                                                <p>$36.00</p>
+                                                <del>$42.00</del>
+                                            </div>
+                                        </div>
+                                        <div class="product__button">
+                                            <a href="#"><i class="fa fa-shopping-bag"></i></a>
+                                            <a href="#"><i class="fa fa-balance-scale"></i></a>
+                                            <a href="#"><i class="fa fa-heart"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="col l-2-4 product-item">
+                                        <div class="product__image">
+                                            <a href="product_detail.html">
+                                                <img src="assets/image/feat9.jpg">
+                                                <i class="fas fa-arrows-alt"></i>
+                                                <span>Quick view</span>
+                                            </a>
+                                            <div class="product__image-sale">
+                                                <span>New</span>
+                                            </div>
+                                        </div>
+                                        <div class="product__content">
+                                            <p>Crepe Jacket With Pompom</p>
+                                            <div class="product__star">
+                                                <ul>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li>
+                                                        <em>6 review(s)</em>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="product__price">
+                                                <p>$36.00</p>
+                                                <del>$42.00</del>
+                                            </div>
+                                        </div>
+                                        <div class="product__button">
+                                            <a href="#"><i class="fa fa-shopping-bag"></i></a>
+                                            <a href="#"><i class="fa fa-balance-scale"></i></a>
+                                            <a href="#"><i class="fa fa-heart"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="col l-2-4 product-item">
+                                        <div class="product__image">
+                                            <a href="product_detail.html">
+                                                <img src="assets/image/feat10.jpg">
+                                                <i class="fas fa-arrows-alt"></i>
+                                                <span>Quick view</span>
+                                            </a>
+                                            <div class="product__image-sale">
+                                                <span>New</span>
+                                            </div>
+                                        </div>
+                                        <div class="product__content">
+                                            <p>Crepe Jacket With Pompom</p>
+                                            <div class="product__star">
+                                                <ul>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li>
+                                                        <em>6 review(s)</em>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="product__price">
+                                                <p>$36.00</p>
+                                                <del>$42.00</del>
+                                            </div>
+                                        </div>
+                                        <div class="product__button">
+                                            <a href="#"><i class="fa fa-shopping-bag"></i></a>
+                                            <a href="#"><i class="fa fa-balance-scale"></i></a>
+                                            <a href="#"><i class="fa fa-heart"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab__content">
+                                <div class="row">
+                                    <div class="col l-2-4 product-item">
+                                        <div class="product__image">
+                                            <a href="product_detail.html">
+                                                <img src="assets/image/feat4.jpg">
+                                                <i class="fas fa-arrows-alt"></i>
+                                                <span>Quick view</span>
+                                            </a>
+                                            <div class="product__image-sale">
+                                                <span>New</span>
+                                            </div>
+                                        </div>
+                                        <div class="product__content">
+                                            <p>Crepe Jacket With Pompom</p>
+                                            <div class="product__star">
+                                                <ul>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li>
+                                                        <em>6 review(s)</em>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="product__price">
+                                                <p>$36.00</p>
+                                                <del>$42.00</del>
+                                            </div>
+                                        </div>
+                                        <div class="product__button">
+                                            <a href="#"><i class="fa fa-shopping-bag"></i></a>
+                                            <a href="#"><i class="fa fa-balance-scale"></i></a>
+                                            <a href="#"><i class="fa fa-heart"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="col l-2-4 product-item">
+                                        <div class="product__image">
+                                            <a href="">
+                                                <img src="assets/image/feat5.jpg">
+                                                <i class="fas fa-arrows-alt"></i>
+                                                <span>Quick view</span>
+                                            </a>
+                                            <div class="product__image-sale">
+                                                <span>New</span>
+                                            </div>
+                                        </div>
+                                        <div class="product__content">
+                                            <p>Crepe Jacket With Pompom</p>
+                                            <div class="product__star">
+                                                <ul>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li>
+                                                        <em>6 review(s)</em>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="product__price">
+                                                <p>$36.00</p>
+                                                <del>$42.00</del>
+                                            </div>
+                                        </div>
+                                        <div class="product__button">
+                                            <a href="#"><i class="fa fa-shopping-bag"></i></a>
+                                            <a href="#"><i class="fa fa-balance-scale"></i></a>
+                                            <a href="#"><i class="fa fa-heart"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="col l-2-4 product-item">
+                                        <div class="product__image">
+                                            <a href="">
+                                                <img src="assets/image/feat4.jpg">
+                                                <i class="fas fa-arrows-alt"></i>
+                                                <span>Quick view</span>
+                                            </a>
+                                            <div class="product__image-sale">
+                                                <span>New</span>
+                                            </div>
+                                        </div>
+                                        <div class="product__content">
+                                            <p>Crepe Jacket With Pompom</p>
+                                            <div class="product__star">
+                                                <ul>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li>
+                                                        <em>6 review(s)</em>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="product__price">
+                                                <p>$36.00</p>
+                                                <del>$42.00</del>
+                                            </div>
+                                        </div>
+                                        <div class="product__button">
+                                            <a href="#"><i class="fa fa-shopping-bag"></i></a>
+                                            <a href="#"><i class="fa fa-balance-scale"></i></a>
+                                            <a href="#"><i class="fa fa-heart"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="col l-2-4 product-item">
+                                        <div class="product__image">
+                                            <a href="">
+                                                <img src="assets/image/feat7.jpg">
+                                                <i class="fas fa-arrows-alt"></i>
+                                                <span>Quick view</span>
+                                            </a>
+                                            <div class="product__image-sale">
+                                                <span>New</span>
+                                            </div>
+                                        </div>
+                                        <div class="product__content">
+                                            <p>Crepe Jacket With Pompom</p>
+                                            <div class="product__star">
+                                                <ul>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li>
+                                                        <em>6 review(s)</em>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="product__price">
+                                                <p>$36.00</p>
+                                                <del>$42.00</del>
+                                            </div>
+                                        </div>
+                                        <div class="product__button">
+                                            <a href="#"><i class="fa fa-shopping-bag"></i></a>
+                                            <a href="#"><i class="fa fa-balance-scale"></i></a>
+                                            <a href="#"><i class="fa fa-heart"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="col l-2-4 product-item">
+                                        <div class="product__image">
+                                            <a href="">
+                                                <img src="assets/image/feat4.jpg">
+                                                <i class="fas fa-arrows-alt"></i>
+                                                <span>Quick view</span>
+                                            </a>
+                                            <div class="product__image-sale">
+                                                <span>New</span>
+                                            </div>
+                                        </div>
+                                        <div class="product__content">
+                                            <p>Crepe Jacket With Pompom</p>
+                                            <div class="product__star">
+                                                <ul>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li>
+                                                        <em>6 review(s)</em>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="product__price">
+                                                <p>$36.00</p>
+                                                <del>$42.00</del>
+                                            </div>
+                                        </div>
+                                        <div class="product__button">
+                                            <a href="#"><i class="fa fa-shopping-bag"></i></a>
+                                            <a href="#"><i class="fa fa-balance-scale"></i></a>
+                                            <a href="#"><i class="fa fa-heart"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col l-2-4 product-item">
+                                        <div class="product__image">
+                                            <a href="product_detail.html">
+                                                <img src="assets/image/feat4.jpg">
+                                                <i class="fas fa-arrows-alt"></i>
+                                                <span>Quick view</span>
+                                            </a>
+                                            <div class="product__image-sale">
+                                                <span>New</span>
+                                            </div>
+                                        </div>
+                                        <div class="product__content">
+                                            <p>Crepe Jacket With Pompom</p>
+                                            <div class="product__star">
+                                                <ul>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li>
+                                                        <em>6 review(s)</em>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="product__price">
+                                                <p>$36.00</p>
+                                                <del>$42.00</del>
+                                            </div>
+                                        </div>
+                                        <div class="product__button">
+                                            <a href="#"><i class="fa fa-shopping-bag"></i></a>
+                                            <a href="#"><i class="fa fa-balance-scale"></i></a>
+                                            <a href="#"><i class="fa fa-heart"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="col l-2-4 product-item">
+                                        <div class="product__image">
+                                            <a href="product_detail.html">
+                                                <img src="assets/image/feat4.jpg">
+                                                <i class="fas fa-arrows-alt"></i>
+                                                <span>Quick view</span>
+                                            </a>
+                                            <div class="product__image-sale">
+                                                <span>New</span>
+                                            </div>
+                                        </div>
+                                        <div class="product__content">
+                                            <p>Crepe Jacket With Pompom</p>
+                                            <div class="product__star">
+                                                <ul>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li>
+                                                        <em>6 review(s)</em>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="product__price">
+                                                <p>$36.00</p>
+                                                <del>$42.00</del>
+                                            </div>
+                                        </div>
+                                        <div class="product__button">
+                                            <a href="#"><i class="fa fa-shopping-bag"></i></a>
+                                            <a href="#"><i class="fa fa-balance-scale"></i></a>
+                                            <a href="#"><i class="fa fa-heart"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="col l-2-4 product-item">
+                                        <div class="product__image">
+                                            <a href="product_detail.html">
+                                                <img src="assets/image/feat4.jpg">
+                                                <i class="fas fa-arrows-alt"></i>
+                                                <span>Quick view</span>
+                                            </a>
+                                            <div class="product__image-sale">
+                                                <span>New</span>
+                                            </div>
+                                        </div>
+                                        <div class="product__content">
+                                            <p>Crepe Jacket With Pompom</p>
+                                            <div class="product__star">
+                                                <ul>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li>
+                                                        <em>6 review(s)</em>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="product__price">
+                                                <p>$36.00</p>
+                                                <del>$42.00</del>
+                                            </div>
+                                        </div>
+                                        <div class="product__button">
+                                            <a href="#"><i class="fa fa-shopping-bag"></i></a>
+                                            <a href="#"><i class="fa fa-balance-scale"></i></a>
+                                            <a href="#"><i class="fa fa-heart"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="col l-2-4 product-item">
+                                        <div class="product__image">
+                                            <a href="">
+                                                <img src="assets/image/feat4.jpg">
+                                                <i class="fas fa-arrows-alt"></i>
+                                                <span>Quick view</span>
+                                            </a>
+                                            <div class="product__image-sale">
+                                                <span>New</span>
+                                            </div>
+                                        </div>
+                                        <div class="product__content">
+                                            <p>Crepe Jacket With Pompom</p>
+                                            <div class="product__star">
+                                                <ul>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li>
+                                                        <em>6 review(s)</em>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="product__price">
+                                                <p>$36.00</p>
+                                                <del>$42.00</del>
+                                            </div>
+                                        </div>
+                                        <div class="product__button">
+                                            <a href="#"><i class="fa fa-shopping-bag"></i></a>
+                                            <a href="#"><i class="fa fa-balance-scale"></i></a>
+                                            <a href="#"><i class="fa fa-heart"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="col l-2-4 product-item">
+                                        <div class="product__image">
+                                            <a href="">
+                                                <img src="assets/image/feat4.jpg">
+                                                <i class="fas fa-arrows-alt"></i>
+                                                <span>Quick view</span>
+                                            </a>
+                                            <div class="product__image-sale">
+                                                <span>New</span>
+                                            </div>
+                                        </div>
+                                        <div class="product__content">
+                                            <p>Crepe Jacket With Pompom</p>
+                                            <div class="product__star">
+                                                <ul>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li>
+                                                        <em>6 review(s)</em>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="product__price">
+                                                <p>$36.00</p>
+                                                <del>$42.00</del>
+                                            </div>
+                                        </div>
+                                        <div class="product__button">
+                                            <a href="#"><i class="fa fa-shopping-bag"></i></a>
+                                            <a href="#"><i class="fa fa-balance-scale"></i></a>
+                                            <a href="#"><i class="fa fa-heart"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab__content">
+                                <div class="row">
+                                    <div class="col l-2-4 product-item">
+                                        <div class="product__image">
+                                            <a href="product_detail.html">
+                                                <img src="assets/image/feat9.jpg">
+                                                <i class="fas fa-arrows-alt"></i>
+                                                <span>Quick view</span>
+                                            </a>
+                                            <div class="product__image-sale">
+                                                <span>New</span>
+                                            </div>
+                                        </div>
+                                        <div class="product__content">
+                                            <p>Crepe Jacket With Pompom</p>
+                                            <div class="product__star">
+                                                <ul>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li>
+                                                        <em>6 review(s)</em>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="product__price">
+                                                <p>$36.00</p>
+                                                <del>$42.00</del>
+                                            </div>
+                                        </div>
+                                        <div class="product__button">
+                                            <a href="#"><i class="fa fa-shopping-bag"></i></a>
+                                            <a href="#"><i class="fa fa-balance-scale"></i></a>
+                                            <a href="#"><i class="fa fa-heart"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="col l-2-4 product-item">
+                                        <div class="product__image">
+                                            <a href="">
+                                                <img src="assets/image/feat1.jpg">
+                                                <i class="fas fa-arrows-alt"></i>
+                                                <span>Quick view</span>
+                                            </a>
+                                            <div class="product__image-sale">
+                                                <span>New</span>
+                                            </div>
+                                        </div>
+                                        <div class="product__content">
+                                            <p>Crepe Jacket With Pompom</p>
+                                            <div class="product__star">
+                                                <ul>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li>
+                                                        <em>6 review(s)</em>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="product__price">
+                                                <p>$36.00</p>
+                                                <del>$42.00</del>
+                                            </div>
+                                        </div>
+                                        <div class="product__button">
+                                            <a href="#"><i class="fa fa-shopping-bag"></i></a>
+                                            <a href="#"><i class="fa fa-balance-scale"></i></a>
+                                            <a href="#"><i class="fa fa-heart"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="col l-2-4 product-item">
+                                        <div class="product__image">
+                                            <a href="">
+                                                <img src="assets/image/feat4.jpg">
+                                                <i class="fas fa-arrows-alt"></i>
+                                                <span>Quick view</span>
+                                            </a>
+                                            <div class="product__image-sale">
+                                                <span>New</span>
+                                            </div>
+                                        </div>
+                                        <div class="product__content">
+                                            <p>Crepe Jacket With Pompom</p>
+                                            <div class="product__star">
+                                                <ul>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li>
+                                                        <em>6 review(s)</em>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="product__price">
+                                                <p>$36.00</p>
+                                                <del>$42.00</del>
+                                            </div>
+                                        </div>
+                                        <div class="product__button">
+                                            <a href="#"><i class="fa fa-shopping-bag"></i></a>
+                                            <a href="#"><i class="fa fa-balance-scale"></i></a>
+                                            <a href="#"><i class="fa fa-heart"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="col l-2-4 product-item">
+                                        <div class="product__image">
+                                            <a href="">
+                                                <img src="assets/image/feat4.jpg">
+                                                <i class="fas fa-arrows-alt"></i>
+                                                <span>Quick view</span>
+                                            </a>
+                                            <div class="product__image-sale">
+                                                <span>New</span>
+                                            </div>
+                                        </div>
+                                        <div class="product__content">
+                                            <p>Crepe Jacket With Pompom</p>
+                                            <div class="product__star">
+                                                <ul>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li>
+                                                        <em>6 review(s)</em>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="product__price">
+                                                <p>$36.00</p>
+                                                <del>$42.00</del>
+                                            </div>
+                                        </div>
+                                        <div class="product__button">
+                                            <a href="#"><i class="fa fa-shopping-bag"></i></a>
+                                            <a href="#"><i class="fa fa-balance-scale"></i></a>
+                                            <a href="#"><i class="fa fa-heart"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="col l-2-4 product-item">
+                                        <div class="product__image">
+                                            <a href="">
+                                                <img src="assets/image/feat4.jpg">
+                                                <i class="fas fa-arrows-alt"></i>
+                                                <span>Quick view</span>
+                                            </a>
+                                            <div class="product__image-sale">
+                                                <span>New</span>
+                                            </div>
+                                        </div>
+                                        <div class="product__content">
+                                            <p>Crepe Jacket With Pompom</p>
+                                            <div class="product__star">
+                                                <ul>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li>
+                                                        <em>6 review(s)</em>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="product__price">
+                                                <p>$36.00</p>
+                                                <del>$42.00</del>
+                                            </div>
+                                        </div>
+                                        <div class="product__button">
+                                            <a href="#"><i class="fa fa-shopping-bag"></i></a>
+                                            <a href="#"><i class="fa fa-balance-scale"></i></a>
+                                            <a href="#"><i class="fa fa-heart"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col l-2-4 product-item">
+                                        <div class="product__image">
+                                            <a href="">
+                                                <img src="assets/image/feat4.jpg">
+                                                <i class="fas fa-arrows-alt"></i>
+                                                <span>Quick view</span>
+                                            </a>
+                                            <div class="product__image-sale">
+                                                <span>New</span>
+                                            </div>
+                                        </div>
+                                        <div class="product__content">
+                                            <p>Crepe Jacket With Pompom</p>
+                                            <div class="product__star">
+                                                <ul>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li>
+                                                        <em>6 review(s)</em>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="product__price">
+                                                <p>$36.00</p>
+                                                <del>$42.00</del>
+                                            </div>
+                                        </div>
+                                        <div class="product__button">
+                                            <a href="#"><i class="fa fa-shopping-bag"></i></a>
+                                            <a href="#"><i class="fa fa-balance-scale"></i></a>
+                                            <a href="#"><i class="fa fa-heart"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="col l-2-4 product-item">
+                                        <div class="product__image">
+                                            <a href="">
+                                                <img src="assets/image/feat4.jpg">
+                                                <i class="fas fa-arrows-alt"></i>
+                                                <span>Quick view</span>
+                                            </a>
+                                            <div class="product__image-sale">
+                                                <span>New</span>
+                                            </div>
+                                        </div>
+                                        <div class="product__content">
+                                            <p>Crepe Jacket With Pompom</p>
+                                            <div class="product__star">
+                                                <ul>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li>
+                                                        <em>6 review(s)</em>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="product__price">
+                                                <p>$36.00</p>
+                                                <del>$42.00</del>
+                                            </div>
+                                        </div>
+                                        <div class="product__button">
+                                            <a href="#"><i class="fa fa-shopping-bag"></i></a>
+                                            <a href="#"><i class="fa fa-balance-scale"></i></a>
+                                            <a href="#"><i class="fa fa-heart"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="col l-2-4 product-item">
+                                        <div class="product__image">
+                                            <a href="">
+                                                <img src="assets/image/feat4.jpg">
+                                                <i class="fas fa-arrows-alt"></i>
+                                                <span>Quick view</span>
+                                            </a>
+                                            <div class="product__image-sale">
+                                                <span>New</span>
+                                            </div>
+                                        </div>
+                                        <div class="product__content">
+                                            <p>Crepe Jacket With Pompom</p>
+                                            <div class="product__star">
+                                                <ul>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li>
+                                                        <em>6 review(s)</em>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="product__price">
+                                                <p>$36.00</p>
+                                                <del>$42.00</del>
+                                            </div>
+                                        </div>
+                                        <div class="product__button">
+                                            <a href="#"><i class="fa fa-shopping-bag"></i></a>
+                                            <a href="#"><i class="fa fa-balance-scale"></i></a>
+                                            <a href="#"><i class="fa fa-heart"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="col l-2-4 product-item">
+                                        <div class="product__image">
+                                            <a href="">
+                                                <img src="assets/image/feat4.jpg">
+                                                <i class="fas fa-arrows-alt"></i>
+                                                <span>Quick view</span>
+                                            </a>
+                                            <div class="product__image-sale">
+                                                <span>New</span>
+                                            </div>
+                                        </div>
+                                        <div class="product__content">
+                                            <p>Crepe Jacket With Pompom</p>
+                                            <div class="product__star">
+                                                <ul>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li>
+                                                        <em>6 review(s)</em>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="product__price">
+                                                <p>$36.00</p>
+                                                <del>$42.00</del>
+                                            </div>
+                                        </div>
+                                        <div class="product__button">
+                                            <a href="#"><i class="fa fa-shopping-bag"></i></a>
+                                            <a href="#"><i class="fa fa-balance-scale"></i></a>
+                                            <a href="#"><i class="fa fa-heart"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="col l-2-4 product-item">
+                                        <div class="product__image">
+                                            <a href="">
+                                                <img src="assets/image/feat4.jpg">
+                                                <i class="fas fa-arrows-alt"></i>
+                                                <span>Quick view</span>
+                                            </a>
+                                            <div class="product__image-sale">
+                                                <span>New</span>
+                                            </div>
+                                        </div>
+                                        <div class="product__content">
+                                            <p>Crepe Jacket With Pompom</p>
+                                            <div class="product__star">
+                                                <ul>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li>
+                                                        <em>6 review(s)</em>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="product__price">
+                                                <p>$36.00</p>
+                                                <del>$42.00</del>
+                                            </div>
+                                        </div>
+                                        <div class="product__button">
+                                            <a href="#"><i class="fa fa-shopping-bag"></i></a>
+                                            <a href="#"><i class="fa fa-balance-scale"></i></a>
+                                            <a href="#"><i class="fa fa-heart"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- BANNER-->
+                <div class="main__banner">
+                    <div class="row">
+                        <div class="col l-8">
+                            <img src="assets/image/banner1.png">
+                        </div>
+                        <div class="col l-4 banner__right">
+                            <img src="assets/image/banner2.png">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ON SALE-->
+                <section class="main__onsale">
+                    <div class="container">
+                        <div class="onsale__bar">
+                            <h3 class="onsale__title">On Sale!</h3>
+                            <a class="viewmore">
+                                <span>View All Products </span>
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        </div>
+                        <div class="onsale__content">
+                            <div class="row">
+                                <div class="col l-2 product-item">
+                                    <div class="product__image">
+                                        <a href="">
+                                            <img src="assets/image/onsale1.jpg">
+                                            <i class="fas fa-arrows-alt"></i>
+                                            <span>Quick view</span>
+                                        </a>
+                                        <div class="product__image-sale onsale">
+                                            <span> -25%</span>
+                                        </div>
+                                    </div>
+                                    <div class="product__content">
+                                        <p>Crepe Jacket With Pompom</p>
+                                        <div class="product__star">
+                                            <ul>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li>
+                                                    <em>6 review(s)</em>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="product__price">
+                                            <p>$36.00</p>
+                                            <del>$42.00</del>
+                                        </div>
+                                    </div>
+                                    <div class="product__button">
+                                        <a href="#"><i class="fa fa-shopping-bag"></i></a>
+                                        <a href="#"><i class="fa fa-balance-scale"></i></a>
+                                        <a href="#"><i class="fa fa-heart"></i></a>
+                                    </div>
+                                </div>
+                                <div class="col l-2 product-item">
+                                    <div class="product__image">
+                                        <a href="">
+                                            <img src="assets/image/onsale2.jpg">
+                                            <i class="fas fa-arrows-alt"></i>
+                                            <span>Quick view</span>
+                                        </a>
+                                        <div class="product__image-sale onsale">
+                                            <span> -25%</span>
+                                        </div>
+                                    </div>
+                                    <div class="product__content">
+                                        <p>Crepe Jacket With Pompom</p>
+                                        <div class="product__star">
+                                            <ul>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li>
+                                                    <em>6 review(s)</em>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="product__price">
+                                            <p>$36.00</p>
+                                            <del>$42.00</del>
+                                        </div>
+                                    </div>
+                                    <div class="product__button">
+                                        <a href="#"><i class="fa fa-shopping-bag"></i></a>
+                                        <a href="#"><i class="fa fa-balance-scale"></i></a>
+                                        <a href="#"><i class="fa fa-heart"></i></a>
+                                    </div>
+                                </div>
+                                <div class="col l-2 product-item">
+                                    <div class="product__image">
+                                        <a href="">
+                                            <img src="assets/image/onsale3.jpg">
+                                            <i class="fas fa-arrows-alt"></i>
+                                            <span>Quick view</span>
+                                        </a>
+                                        <div class="product__image-sale onsale">
+                                            <span> -25%</span>
+                                        </div>
+                                    </div>
+                                    <div class="product__content">
+                                        <p>Crepe Jacket With Pompom</p>
+                                        <div class="product__star">
+                                            <ul>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li>
+                                                    <em>6 review(s)</em>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="product__price">
+                                            <p>$36.00</p>
+                                            <del>$42.00</del>
+                                        </div>
+                                    </div>
+                                    <div class="product__button">
+                                        <a href="#"><i class="fa fa-shopping-bag"></i></a>
+                                        <a href="#"><i class="fa fa-balance-scale"></i></a>
+                                        <a href="#"><i class="fa fa-heart"></i></a>
+                                    </div>
+                                </div>
+                                <div class="col l-2 product-item">
+                                    <div class="product__image">
+                                        <a href="">
+                                            <img src="assets/image/onsale4.jpg">
+                                            <i class="fas fa-arrows-alt"></i>
+                                            <span>Quick view</span>
+                                        </a>
+                                        <div class="product__image-sale onsale">
+                                            <span> -25%</span>
+                                        </div>
+                                    </div>
+                                    <div class="product__content">
+                                        <p>Crepe Jacket With Pompom</p>
+                                        <div class="product__star">
+                                            <ul>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li>
+                                                    <em>6 review(s)</em>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="product__price">
+                                            <p>$36.00</p>
+                                            <del>$42.00</del>
+                                        </div>
+                                    </div>
+                                    <div class="product__button">
+                                        <a href="#"><i class="fa fa-shopping-bag"></i></a>
+                                        <a href="#"><i class="fa fa-balance-scale"></i></a>
+                                        <a href="#"><i class="fa fa-heart"></i></a>
+                                    </div>
+                                </div>
+                                <div class="col l-2 product-item">
+                                    <div class="product__image">
+                                        <a href="">
+                                            <img src="assets/image/onsale5.jpg">
+                                            <i class="fas fa-arrows-alt"></i>
+                                            <span>Quick view</span>
+                                        </a>
+                                        <div class="product__image-sale onsale">
+                                            <span> -25%</span>
+                                        </div>
+                                    </div>
+                                    <div class="product__content">
+                                        <p>Crepe Jacket With Pompom</p>
+                                        <div class="product__star">
+                                            <ul>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li>
+                                                    <em>6 review(s)</em>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="product__price">
+                                            <p>$36.00</p>
+                                            <del>$42.00</del>
+                                        </div>
+                                    </div>
+                                    <div class="product__button">
+                                        <a href="#"><i class="fa fa-shopping-bag"></i></a>
+                                        <a href="#"><i class="fa fa-balance-scale"></i></a>
+                                        <a href="#"><i class="fa fa-heart"></i></a>
+                                    </div>
+                                </div>
+                                <div class="col l-2 product-item">
+                                    <div class="product__image">
+                                        <a href="">
+                                            <img src="assets/image/onsale6.jpg">
+                                            <i class="fas fa-arrows-alt"></i>
+                                            <span>Quick view</span>
+                                        </a>
+                                        <div class="product__image-sale onsale">
+                                            <span> -25%</span>
+                                        </div>
+                                    </div>
+                                    <div class="product__content">
+                                        <p>Crepe Jacket With Pompom</p>
+                                        <div class="product__star">
+                                            <ul>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li>
+                                                    <em>6 review(s)</em>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="product__price">
+                                            <p>$36.00</p>
+                                            <del>$42.00</del>
+                                        </div>
+                                    </div>
+                                    <div class="product__button">
+                                        <a href="#"><i class="fa fa-shopping-bag"></i></a>
+                                        <a href="#"><i class="fa fa-balance-scale"></i></a>
+                                        <a href="#"><i class="fa fa-heart"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- TESTIMONIAL-->
+                <div class="main__testimonial">
+                    <div class="slideshow">
+                        <div class="slide__wrap">
+                            <input type="radio" name="r" id="ava-1" checked>
+                            <input type="radio" name="r" id="ava-2">
+                            <input type="radio" name="r" id="ava-3">
+
+                            <div class="slide__item slide__item--default">
+                                <img class="avatar" src="assets/image/testimonial.png" alt="">
+                                <div class="customer__info">
+                                    <h4>
+                                        JoAnne Theodore
+                                        <br>
+                                        <em>Graphic Design</em>
+                                    </h4>
+                                    <img class="quote" src="assets/image/quote.png" alt="">
+                                    <p>
+                                        <em>
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                            Lorem Ipsum has been the industry's stan-
+                                            <br>
+                                            dard dummy text ever since the 1500s.
+                                        </em>
+                                    </p>
+                                </div>
+
+                            </div>
+                            <div class="slide__item">
+                                <img class="avatar" src="assets/image/testimonial.png" alt="">
+                                <div class="customer__info">
+                                    <h4>
+                                        JoAnne Theodore
+                                        <br>
+                                        <em>Graphic Design</em>
+                                    </h4>
+                                    <img class="quote" src="assets/image/quote.png" alt="">
+                                    <p>
+                                        <em>
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                            Lorem Ipsum has been the industry's stan-
+                                            <br>
+                                            dard dummy text ever since the 1500s.
+                                        </em>
+                                    </p>
+                                </div>
+
+                            </div>
+                            <div class="slide__item">
+                                <img class="avatar" src="assets/image/testimonial.png" alt="">
+                                <div class="customer__info">
+                                    <h4>
+                                        JoAnne Theodore
+                                        <br>
+                                        <em>Graphic Design</em>
+                                    </h4>
+                                    <img class="quote" src="assets/image/quote.png" alt="">
+                                    <p>
+                                        <em>
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                            Lorem Ipsum has been the industry's stan-
+                                            <br>
+                                            dard dummy text ever since the 1500s.
+                                        </em>
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="slider__nav">
+                            <label for="ava-1" class="bar label-1"></label>
+                            <label for="ava-2" class="bar label-2"></label>
+                            <label for="ava-3" class="bar label-3"></label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BLOGS -->
+                <div class="main__blog">
+                    <div class="blog__tit">
+                        <h3>BLOGS</h3>
+                        <div class="blog__button">
+                            <i class="btn fa fa-chevron-left"></i>
+                            <i class="btn fa fa-chevron-right"></i>
+                        </div>
+                    </div>
+                    <div class="blog__content">
+                        <div class="row">
+                            <div class="col l-6 blog__wrap">
+                                <div class="blog__img">
+                                    <img src="assets/image/blog1.jpg">
+                                </div>
+                                <div class="blog__info">
+                                    <h4>Our Kindergarten Anniversarty</h4>
+                                    <div class="blog__author">
+                                        <img src="assets/image/testimonial.png">
+                                        <p>
+                                            <em>Pixel Creative</em>
+                                        </p>
+                                    </div>
+                                    <div class="blog__date">
+                                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                                        <p>
+                                            <em>Jan 30, 2018</em>
+                                        </p>
+                                    </div>
+                                    <p class="blog__description">The perfect class for your child with the best staff
+                                        and best teachers...</p>
+                                    <div class="blog__cmt">
+                                        <i class="fa fa-comments" aria-hidden="true"></i>
+                                        <p>
+                                            <em>123 Comments</em>
+                                        </p>
+                                    </div>
+                                    <div class="blog__like">
+                                        <i class="far fa-thumbs-up"></i>
+                                        <p>
+                                            <em>98 likes</em>
+                                        </p>
+                                    </div>
+                                    <div class="blog__readbtn">
+                                        <em>Read More</em>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-6 blog__wrap">
+                                <div class="blog__img">
+                                    <img src="assets/image/blog2.jpg">
+                                </div>
+                                <div class="blog__info">
+                                    <h4>Our Kindergarten Anniversarty</h4>
+                                    <div class="blog__author">
+                                        <img src="assets/image/testimonial.png">
+                                        <p>
+                                            <em>Pixel Creative</em>
+                                        </p>
+                                    </div>
+                                    <div class="blog__date">
+                                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                                        <p>
+                                            <em>Jan 30, 2018</em>
+                                        </p>
+                                    </div>
+                                    <p class="blog__description">The perfect class for your child with the best staff
+                                        and best teachers...</p>
+                                    <div class="blog__cmt">
+                                        <i class="fa fa-comments" aria-hidden="true"></i>
+                                        <p>
+                                            <em>123 Comments</em>
+                                        </p>
+                                    </div>
+                                    <div class="blog__like">
+                                        <i class="far fa-thumbs-up"></i>
+                                        <p>
+                                            <em>98 likes</em>
+                                        </p>
+                                    </div>
+                                    <div class="blog__readbtn">
+                                        <em>Read More</em>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+            <!-- FOOTER -->
+            <footer class="footer">
+                <div class="row">
+                    <div class="col l-4">
+                        <div class="logo">
+                            <img src="assets/image/logo.png">
+                        </div>
+                        <div class="description">
+                            <em>Miukid is a premium eCommerce theme with
+                                advanced admin module.
+                            </em>
+                        </div>
+                        <div class="contact">
+                            <ul>
+                                <li>
+                                    <i class="fas fa-phone-alt"></i> <span>Telephone: +84 988 992 085</span>
+                                </li>
+                                <li>
+                                    <i class="far fa-envelope"></i> <span>Email: lamhvdesigner@gmail.com</span>
+                                </li>
+                                <li>
+                                    <i class="far fa-clock"></i>
+                                    <span>
+                                        8:00 - 19:00, Monday - Saturday,
+                                        Sunday - closed
+                                    </span>
+                                </li>
+                            </ul>
+
+                            <div class="social">
+                                <ul>
+                                    <li><i class="fab fa-twitter"></i></li>
+                                    <li><i class="fab fa-skype"></i></li>
+                                    <li><i class="fab fa-vine"></i></li>
+                                    <li><i class="fab fa-facebook-f"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-2">
+                        <div class="info">
+                            <h4>Infomation</h4>
+                            <div class="info__separate"></div>
+                            <ul>
+                                <li>
+                                    <p>About Us</p>
+                                </li>
+                                <li>
+                                    <p>Shipping & Returns</p>
+                                </li>
+                                <li>
+                                    <p>Privacy Notice</p>
+                                </li>
+                                <li>
+                                    <p>Conditions of Use</p>
+                                </li>
+                                <li>
+                                    <p>RSS</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col l-2">
+                        <div class="info">
+                            <h4>Service</h4>
+                            <div class="info__separate"></div>
+                            <ul>
+                                <li>
+                                    <p>Online support</p>
+                                </li>
+                                <li>
+                                    <p>Help & FAQs</p>
+                                </li>
+                                <li>
+                                    <p>Call Center</p>
+                                </li>
+                                <li>
+                                    <p>Contact Us</p>
+                                </li>
+                                <li>
+                                    <p>Custom Link</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col l-4">
+                        <div class="footer__img">
+                            <h4>Instagram</h4>
+                            <div class="info__separate"></div>
+                            <ul>
+                                <li><img src="assets/image/imgfooter1.jpg"></li>
+                                <li><img src="assets/image/imgfooter2.jpg"></li>
+                                <li><img src="assets/image/imgfooter3.jpg"></li>
+                                <li><img src="assets/image/imgfooter4.jpg"></li>
+                                <li><img src="assets/image/imgfooter5.jpg"></li>
+                                <li><img src="assets/image/imgfooter6.jpg"></li>
+                                <li><img src="assets/image/imgfooter7.jpg"></li>
+                                <li><img src="assets/image/imgfooter8.jpg"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+            <!-- FOOTER ENDING-->
+            <div class="footer-ending">
+                <div class="row">
+                    <div class="col l-8">
+                        <div class="ending__left">
+                            <span>Copyright © 2018 by </span>
+                            <a href="#">EngoTheme. </a>
+                            <span>All Rights Reserved.</span>
+                        </div>
+
+                    </div>
+                    <div class="col l-4">
+                        <div class="ending__right">
+                            <ul>
+                                <li><img src="assets/image/fotterending1.png"></li>
+                                <li><img src="assets/image/fotterending2.png"></li>
+                                <li><img src="assets/image/fotterending3.png"></li>
+                                <li><img src="assets/image/fotterending4.png"></li>
+                                <li><img src="assets/image/fotterending5.png"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SCROLL TOP-->
+            <div class="scroll-top">
+                <a href="#header" class="button" id="scrolltop">
+                    <i class="fas fa-angle-up"></i>
+                </a>
+            </div>
+
+        </div>
+    </div>
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+
+</body>
+
+</html>
